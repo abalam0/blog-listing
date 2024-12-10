@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Listing</title>
+    <script src="https://kit.fontawesome.com/f73f4ede16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./blog.css">
+</head>
+<body>
+    <!-- header part start -->
+    <header class="side-gap">
+                <div class="logo-name">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9022 10.9546C23.7074 9.45798 23.2273 7.97282 22.4368 6.57931V6.58035C19.504 1.40833 13.3061 -0.750677 7.89972 1.22294L15.614 5.15872C16.869 5.77424 17.9782 6.71679 18.7999 7.94783L20.6755 12.5704C20.6755 12.5704 19.3186 13.5542 23.9022 10.9546ZM3.94063 11.0932V11.0973C3.88023 11.441 3.84168 11.7899 3.82606 12.1399L2.93139 20.3582C2.4221 19.7698 1.96282 19.122 1.56393 18.419C-1.31162 13.349 -0.0930824 7.07406 4.16348 3.41115L7.99409 5.36602L7.96282 5.38372C5.7507 6.63872 4.34679 8.7696 3.93957 11.0942L3.94063 11.0932ZM16.2845 19.4679L23.6717 15.278C22.927 18.4045 20.9357 21.2249 17.9196 22.936C14.1942 25.0492 9.81786 24.9513 6.30597 23.0621L6.77047 18.794C9.31169 20.9051 12.9923 21.3426 16.0365 19.6168C16.1199 19.5689 16.2022 19.52 16.2834 19.47L16.2845 19.4679Z" fill="#18181B"/>
+                        </svg>
+                    <p>Comfea</p>
+                </div>
+                <nav>
+                    <a href="#">
+                        Home
+                    </a><a href="">
+                        About us
+                    </a><a href="#">
+                        Property
+                    </a><a href="#">
+                        Agent
+                    </a><a href="#">
+                        Blog
+                    </a><a href="#">
+                        FAQ'S
+                    </a>
+                </nav>
+                <div class="contact-btn"><button>Contact Us</button></div>
+    </header>
+    <!-- header part end --> 
+
+    <!--second header part start  -->
+    <section class="side-gap">
+        <div class="s-header-text">
+            <div class="sh-text">
+                <h1>Let’s Find The Latest Article Today</h1>
+                <p>Discover our curated selection of properties that cater to various lifestyles and budgets. Whether you’re searching for a modern city apartment, a cozy suburban home, or an investment property, our listings have something for everyone.</p>
+            </div>
+            <div class="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 22L20 20" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="text" placeholder="Search Article">                  
+            </div>
+        </div>
+    </section>
+    <!--second header part end  -->
+
+    <!-- blog-part start  -->
+    <section class="side-gap">
+       <div class="all-blog">
+            <!-- blog 1 start -->
+            <div class="blog1">
+                <div class="img-link">
+                  <img src="./assets/images/blog-images/Image.png" alt="blog-pic">
+                </div>
+                <div class="blog-texts">
+                    <div class="blog-down-text">
+                        <span>
+                            May 16,2024
+                        </span>
+                        <div class="clock-icon">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                    </svg>
+                                    12 min reading time                      
+                        </div>
+                    </div>
+                    <h4>How to Choose the Right Indoor Plants for Your Home</h4>
+                    <P>Adding indoor plants to your living space not only enhances the aesthetic appeal but also purifies the air and promotes relaxation. With a variety of indoor plant options available, you can select the perfect plants to suit your home environment and personal style.</P>
+                </div>
+            </div>
+            <!-- blog 1 end -->
+            <!-- right blog start -->
+            <div class="right-blog">
+                <div class="right-blog1">
+                    <div class="right-img">
+                        <img src="./assets/images/blog-images/Image (1).png" alt="">
+                    </div>
+                    <div class="right-text">
+                        <span>
+                            May 16,2024
+                        </span>
+                        <h2>10 Creative Ways to Arrange Your Home Office</h2>
+                        <div class="clock-icon">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                            </svg>
+                            12 min reading time                      
+                        </div>
+                    </div>
+                </div>
+                <div class="right-blog1">
+                    <div class="right-img">
+                        <img src="./assets/images/blog-images/Image (2).png" alt="">
+                    </div>
+                    <div class="right-text">
+                        <span>
+                            May 16,2024
+                        </span>
+                        <h2>10 Creative Ways to Arrange Your Home Office</h2>
+                        <div class="clock-icon">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                            </svg>
+                            12 min reading time                      
+                        </div>
+                    </div>
+                </div>
+                <div class="right-blog1">
+                    <div class="right-img">
+                        <img src="./assets/images/blog-images/Image (3).png" alt="">
+                    </div>
+                    <div class="right-text">
+                        <span>
+                            May 16,2024
+                        </span>
+                        <h2>10 Creative Ways to Arrange Your Home Office</h2>
+                        <div class="clock-icon">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                            </svg>
+                            12 min reading time                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- right blog end -->
+       </div>      
+    </section>
+    <!-- blog-part end  -->
+
+    <!-- article-part start  -->
+    <section class="side-gap">
+            <div class="article-body">
+                <!-- blog body is kind of similar to property part.  -->
+                <div class="list-text">
+                    <h2>In Case You Missed It</h2>
+                    <p>Here is a collection of interesting articles that you may not have seen yet. Don't miss out on important information and the latest trends that can enhance your knowledge.</p>
+                </div>
+                <!-- all-property start -->
+                <div class="all-article">
+                    <!-- article 1 start -->
+                    <div class="article1">
+                        <div class="img-link">
+                            <img src="./assets/images/blog-images/Image (4).png" alt="blog-pic">
+                        </div>
+                        <div class="article-down-text">
+                            <span>
+                                May 16,2024
+                            </span>
+                            <div class="clock-icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                </svg>
+                                12 min reading time                      
+                            </div>
+                        </div>
+                         <h4>8 Cool Type 36 Open Kitchen Design Ideas</h4>
+                         <p>
+                            In today's fast-paced business landscape, efficiency is key to success. From small local shops to large-scale enterprises, businesses are constantly seeking ways to streamline their operations and enhance customer experiences. One technology that has revolutionized the way businesses operate is the Point of Sale (POS) system.
+                         </p>
+                    </div>
+                    <!-- article 1 end -->
+
+                    <!-- The following article are similar to article 1-->
+                    <div class="article1">
+                        <div class="img-link">
+                            <img src="./assets/images/blog-images/Image (5).png" alt="blog-pic">
+                        </div>
+                        <div class="article-down-text">
+                            <span>
+                                May 17,2024
+                            </span>
+                            <div class="clock-icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                </svg>
+                                13 min reading time                      
+                            </div>
+                        </div>
+                         <h4>10 Innovative Tech Gadgets for 2024</h4>
+                         <p>
+                            In the ever-evolving world of technology, new gadgets and devices are constantly emerging to enhance our daily lives. From smart home assistants to advanced wearables, the possibilities seem endless. Let's explore some of the most innovative tech gadgets that are set to revolutionize 2024.
+                         </p>
+                    </div>
+                    <div class="article1">
+                        <div class="img-link">
+                            <img src="./assets/images/blog-images/Image (6).png" alt="blog-pic">
+                        </div>
+                        <div class="article-down-text">
+                            <span>
+                                May 18,2024
+                            </span>
+                            <div class="clock-icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                </svg>
+                                11 min reading time                      
+                            </div>
+                        </div>
+                         <h4>5 Eco-Friendly Home Decor Trends</h4>
+                         <p>
+                            As sustainability becomes a focal point in design and lifestyle choices, eco-friendly home decor trends are on the rise. From upcycled furniture to biodegradable materials, homeowners are embracing environmentally conscious practices. Let's discover some of the top eco-friendly home decor trends for a greener future.
+                         </p>
+                    </div>
+                    <div class="article1">
+                        <div class="img-link">
+                            <img src="./assets/images/blog-images/Image (7).png" alt="blog-pic">
+                        </div>
+                        <div class="article-down-text">
+                            <span>
+                                May 19,2024
+                            </span>
+                            <div class="clock-icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                </svg>
+                                20 min reading time                      
+                            </div>
+                        </div>
+                         <h4>7 Must-Have Tools for DIY Enthusiasts</h4>
+                         <p>
+                            For DIY enthusiasts and home improvement aficionados, having the right tools is essential for tackling projects with ease. From power drills to woodworking essentials, a well-equipped toolbox can make all the difference. Let's explore some of the must-have tools every DIY enthusiast should consider.
+                         </p>
+                    </div>
+                    <div class="article1">
+                        <div class="img-link">
+                            <img src="./assets/images/blog-images/Image (8).png" alt="blog-pic">
+                        </div>
+                        <div class="article-down-text">
+                            <span>
+                                May 20,2024
+                            </span>
+                            <div class="clock-icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                </svg>
+                                12 min reading time                      
+                            </div>
+                        </div>
+                         <h4>9 Delicious Plant-Based Recipes to Try</h4>
+                         <p>
+                            With the growing popularity of plant-based diets, exploring delicious and nutritious recipes has become a culinary adventure. From hearty mains to decadent desserts, plant-based cooking offers a wide range of options for every palate. Let's dive into some mouthwatering plant-based recipes worth trying at home.
+                         </p>
+                    </div>
+                    <div class="article1">
+                        <div class="img-link">
+                            <img src="./assets/images/blog-images/Image (9).png" alt="blog-pic">
+                        </div>
+                        <div class="article-down-text">
+                            <span>
+                                May 21,2024
+                            </span>
+                            <div class="clock-icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                </svg>
+                                16 min reading time                      
+                            </div>
+                        </div>
+                         <h4>6 Creative Home Office Design Ideas</h4>
+                         <p>
+                            As remote work continues to be a prevalent trend, creating a functional and inspiring home office space has never been more important. From ergonomic furniture to personalized decor, designing a home workspace that boosts productivity is key. Let's explore some creative home office design ideas to elevate your work environment.
+                         </p>
+                    </div>
+                    <div class="article1">
+                        <div class="img-link">
+                            <img src="./assets/images/blog-images/Image (10).png" alt="blog-pic">
+                        </div>
+                        <div class="article-down-text">
+                            <span>
+                                May 22,2024
+                            </span>
+                            <div class="clock-icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                </svg>
+                                16 min reading time                      
+                            </div>
+                        </div>
+                         <h4>8 Captivating Photography Books to Explore</h4>
+                         <p>
+                            Photography enthusiasts and art lovers alike can find inspiration and insight in the pages of captivating photography books. From iconic images to behind-the-scenes stories, these books offer a glimpse into the world of visual storytelling. Let's discover some of the most captivating photography books that deserve a spot on your bookshelf.
+                         </p>
+                    </div>
+                    <div class="article1">
+                        <div class="img-link">
+                            <img src="./assets/images/blog-images/Image (11).png" alt="blog-pic">
+                        </div>
+                        <div class="article-down-text">
+                            <span>
+                                May 23,2024
+                            </span>
+                            <div class="clock-icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                </svg>
+                                10 min reading time                      
+                            </div>
+                        </div>
+                         <h4>4 Bold Color Trends for Interior Design</h4>
+                         <p>
+                            Injecting bold colors into interior design can transform a space and create a vibrant atmosphere. Whether opting for statement walls or colorful accents, embracing bold color trends can add personality and flair to any room. Let's explore some of the top bold color trends that are reshaping interior design in 2024.
+                         </p>
+                    </div>
+                    <div class="article1">
+                        <div class="img-link">
+                            <img src="./assets/images/blog-images/Image (12).png" alt="blog-pic">
+                        </div>
+                        <div class="article-down-text">
+                            <span>
+                                May 24,2024
+                            </span>
+                            <div class="clock-icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                </svg>
+                                8 min reading time                      
+                            </div>
+                        </div>
+                         <h4>11 Essential Kitchen Gadgets for Home Cooks</h4>
+                         <p>
+                            For home cooks and culinary enthusiasts, having the right kitchen gadgets can simplify meal preparation and elevate the cooking experience. From time-saving appliances to innovative tools, stocking your kitchen with essentials is key to culinary success. Let's take a look at some of the must-have kitchen gadgets every home cook should own.
+                         </p>
+                    </div>
+                </div>
+                <div class="view-more">
+                    <button class="learn-more">View More</button>
+                </div>
+            </div>  
+    </section>
+    <!-- article-part end  -->
+
+    <!-- communicate  part start-->
+     <section class="communicate-section">
+        <div class="communicate-part">
+            <div class="contact-img">
+                <img src="./assets/images/blog-images/Contact Form.png" alt="form-pic">
+            </div>
+            <div class="text-button">
+                <h6>Ready to find your dream home? Let us help!</h6>
+                <p>
+                    Don’t hesitate to get in touch with us and begin your journey to owning your dream home. We’re here to guide you every step of the way!
+                </p>
+                <div class="email-button">
+                   <div class="input"> <input type="email" placeholder="What'a your email?"></div>
+                   <div class="button"> <button class="learn-more">Subscribe</button></div>
+                </div>
+            </div>
+         </div>
+     </section>
+    <!-- communicate  part end-->
+
+     <!-- footer part start -->
+    <footer>
+            <div class="footer-body">
+                <div class="information">
+                    <div class="left-info">
+                        <h3>
+                            We are an experienced real estate agency based in United Kingdom    
+                        </h3>
+                        <div class="address">
+                           <div class="general">
+                            <span>General Enquiries</span>
+                            <p>info@example.com</p>
+                           </div>
+                           <div class="general">
+                            <span>Phone</span>
+                            <p>0154025133**</p>
+                           </div>
+                           <div class="general">
+                            <span>Office </span>
+                            <p>789 Elm Street, Springfield, Illinois 62704</p>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="right-info">
+                        <div class="navigation">
+                            <span>Navigation</span>
+                            <span>Follow Us<span>
+                        </div>
+                        <div class="all-links">
+                            <div class="flink  home">
+                                <a href="#">Home</a>
+                                <a href="#">About Us</a>
+                                <a href="#">Listing Product</a>
+                            </div>
+                            <div class="flink  faq">
+                                <a href="#">FAQ's</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Agent</a>
+                            </div>
+                            <div class="flink  social-link">
+                                <a href="#">Facebook</a>
+                                <a href="#">Instagram</a>
+                                <a href="#">Twitter</a>
+                                <a href="#">Behance</a>
+                                <a href="#">Dribble</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="textup-hr"><hr></div>
+                <div class="footer-text">
+                    <div class="logo-name">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9022 10.9546C23.7074 9.45798 23.2273 7.97282 22.4368 6.57931V6.58035C19.504 1.40833 13.3061 -0.750677 7.89972 1.22294L15.614 5.15872C16.869 5.77424 17.9782 6.71679 18.7999 7.94783L20.6755 12.5704C20.6755 12.5704 19.3186 13.5542 23.9022 10.9546ZM3.94063 11.0932V11.0973C3.88023 11.441 3.84168 11.7899 3.82606 12.1399L2.93139 20.3582C2.4221 19.7698 1.96282 19.122 1.56393 18.419C-1.31162 13.349 -0.0930824 7.07406 4.16348 3.41115L7.99409 5.36602L7.96282 5.38372C5.7507 6.63872 4.34679 8.7696 3.93957 11.0942L3.94063 11.0932ZM16.2845 19.4679L23.6717 15.278C22.927 18.4045 20.9357 21.2249 17.9196 22.936C14.1942 25.0492 9.81786 24.9513 6.30597 23.0621L6.77047 18.794C9.31169 20.9051 12.9923 21.3426 16.0365 19.6168C16.1199 19.5689 16.2022 19.52 16.2834 19.47L16.2845 19.4679Z" fill="#FCFCFC"/>
+                        </svg>
+                        <p>Comfea</p>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2023-2024, All Rights Reserved
+                    </div>
+                    <div class="back-arrow">
+                        Back to top
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.6666 3.21928V11.3337H5.33327V3.21928L1.75726 6.79526L0.814453 5.85246L5.99993 0.666992L11.1853 5.85246L10.2425 6.79526L6.6666 3.21928Z" fill="#FCFCFC"/>
+                        </svg>              
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- footer part end -->
+</body>
+</html>
