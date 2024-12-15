@@ -1,5 +1,4 @@
 
-
 @import url("./Satoshi_Complete/Fonts/WEB/css/satoshi.css");
 
 
@@ -13,7 +12,7 @@
 
 
 .side-gap{
-    width: 88%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -39,6 +38,8 @@ body{
     --gray-dark:#51525C;
     --red:red;
     --green:green;
+    --hover-bg-color:rgb(77, 252, 185);
+    --hover-color:white;
     /* color property end */
     /* size property  start*/
     --large-size:6.5rem;
@@ -55,15 +56,20 @@ body{
     --font-weight2:700;
     /* size property end */
 }
+
+a{
+    text-decoration: none;
+}
 /* end of variable */
 
 
 /* start css of header */
 header{
+    z-index: 4;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: 5.18rem;
-    align-items: center;
 }
 
 .logo-name{
@@ -71,10 +77,9 @@ header{
     align-items: center;
     gap: 1%;
     font-size: var(--x-small3);
-    font-weight: 700;
+    font-weight: var(--font-weight2);
     color: var(--black);
 }
-
 
 .logo-name p{
     padding-left: 0.5rem;
@@ -84,13 +89,51 @@ header{
 header nav{
     display: flex;
     gap: 2rem;
-    font-weight: var(--font-weight1);
 }
 
 header nav a{
     text-decoration: none;
-    font-size: 10px;
-    color: var(--gray);
+    font-size: 1rem;
+    color: var(--gray-dark);
+    font-weight:100;
+    position: relative;
+    transition: color 0.8s ease ;
+}
+
+/* start hover and animation */
+
+header nav a:hover span{
+    color: var(--hover-bg-color);
+}
+
+
+.rotate{
+    animation: rotate 2s linear  infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+nav a::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--green);
+    transition: width  0.3s ease-out;
+}
+
+nav a:hover::after{
+    width: 100%;
 }
 
 .contact-btn button{
@@ -99,8 +142,22 @@ header nav a{
     border: none;
     padding: 0.625rem 1.125rem;
     border-radius: 0.375rem;
+    transition: background-color 0.3s ease , color 0.3s ease ;
 }
+
+.contact-btn button:hover{
+    background-color: var(--hover-bg-color);
+    color: var(--white);
+}
+
+
+ .three-dot{
+    display: none;
+}
+
+/* end hover and animation */
 /* end css of header */
+
 
 /* start css of second header part*/
 .s-header-text{
@@ -110,16 +167,17 @@ header nav a{
 .sh-text{
     display: flex;
     justify-content: space-between;
+    gap: 5%;
 }
 
 .sh-text h1{
-    width: 40%;
+    width: 50%;
     font-size: var(--medium2);
     font-weight: var(--font-weight1);
 }
 
 .sh-text p{
-    width: 40%;
+    width: 50%;
     color: var(--gray);
     line-height: 2;
 }
@@ -148,6 +206,44 @@ header nav a{
 }
 
 
+
+/* start animation part of hero section */
+
+.s-header-text h1{
+    position: relative;
+    animation: move-left 1s ease-in-out forwards ;
+ }
+ 
+ @keyframes move-left{
+    from{
+         left:-430px;
+     }
+     to{
+         left: 0px;
+     }
+ }
+
+
+
+
+ .s-header-text p{
+    position: relative;
+    animation: move-right 1s  ease-in-out forwards ;
+ }
+
+ @keyframes move-right{
+    from{
+         right:-500px;
+     }
+     to{
+         right: 0px;
+     }
+ }
+
+
+/* end animation part of hero section */
+
+
 /* end css of second header part*/
 
 
@@ -167,33 +263,37 @@ header nav a{
     display: flex;
     align-items: center;
     width: 75%;
+    height: 100%;
     gap: 3%;
 }
 
 .blog1 .img-link{
     width: 45%;
+    height: 100%;
+    display: flex;
 }
 
 .blog1 img{
     width: 100%;
+    height: 100%;
 }
 
+
+
+.blog1 .blog-texts{
+    width: 55%;
+    height: 100%;
+}
 
 .blog-down-text{
     display: flex;
     align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
  span{
     color: var(--gray);
 }
 
-
-.blog1 .blog-texts{
-    width: 55%;
-}
 
 
  .clock-icon{
@@ -227,15 +327,15 @@ header nav a{
 
 
 .right-blog{
-    width: 35%;
+    width: 30%;
+    height: 100%;
 }
 
 .right-blog .right-blog1{
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
     gap: 3%;
     display: flex;
-    align-items: center;
 }
 
 .right-blog1 .right-img{
@@ -247,15 +347,22 @@ header nav a{
 }
 
 .right-blog1 .right-text{
-    width: 70%;
+    width: 68%;
 }
 
 .right-blog1 .right-text h2{
+    align-items: center;
     font-size: var(--x-small4);
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
     color: var(--black);
     font-weight: var(--font-weight1);
+}
+
+.right-text p{
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 /* end of blog part */
 
@@ -266,7 +373,7 @@ header nav a{
     margin-top: 4rem;
 }
 
-.all-article{
+.row{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -286,14 +393,15 @@ header nav a{
     color: var(--gray);
 }
 
-.article1{
+.article{
     width: 32%;
     margin-bottom: 2rem;
 }
 
-.article1 img{
+.article img{
     width: 100%;
 }
+
 
 
 .article-down-text{
@@ -314,17 +422,21 @@ header nav a{
     gap: 1%;
 }
 
-.article1 h4{
+.article h4{
     font-size: var(--x-small3);
     font-weight: var(--font-weight1);
 }
 
-.article1 p{
+.article p{
     margin-top:1rem;
-    margin-bottom: 1rem;
     color: var(--gray);
     line-height: 1.5;
+    white-space: nowrap;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
 
 
 .view-more{
@@ -340,74 +452,82 @@ header nav a{
     background-color: var(--black);
     color: var(--white);
 }
+
 /* end of article part */
 
-/* start css of communicate part */
-.communicate-section{
-    width: 97%;
-    margin: 0 auto;
-    margin-top: 4rem;
-}
-
+/* start of communication part */
 .communicate-part {
     position: relative;
-    height: 30rem;
-}
-
-
-.contact-img{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-
-
-.contact-img::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(19, 18, 18);
-    opacity: 70%;
-}
-
-
-
-.communicate-part .contact-img img{
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
-.text-button{
-    transform: translate(30% , 15%);
-    position: absolute;
-    z-index: 1;
-    color: var(--white);
-    top: 0;
-    width: 60%;
-    margin: 0 auto;
     display: flex;
-    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.communicate-part::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    z-index: 1;
+    opacity: 65%;
+}
+
+
+.contact-text{
+    position: absolute;
+    left: 3.5rem;
+    width: calc(95% - 3.5rem);
+    z-index: 1;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4%;
+}
+
+.contact-text .text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.text-button h6{
-    font-size: var(--medium2);
+
+.contact-text .left-part{
+    color: var(--white);
+}
+.contact-text .left-part h1{
+    font-size: var(--small);
+    font-weight: var(--font-weight1);
 }
 
-.text-button p{
-    font-size: var(--x-small3);
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+
+.contact-text .left-part p{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: var(--x-small);
+    line-height: 2;
+}
+
+
+
+.view-more{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.learn-more {
+    padding: 0.625rem 2.125rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .email-button{
@@ -448,7 +568,26 @@ header nav a{
 }
 
 
-/* end css of communicate part */
+.communicate-part  .contact-img{
+    overflow: hidden;
+    display: flex;
+    width:100%;
+    height: 100%;
+}
+
+.phone-button{
+    display: none;
+}
+
+
+.communicate-part img{
+    width: auto;
+    height:auto;
+}
+
+
+/* start of communication part */
+
 
 
 
@@ -458,7 +597,6 @@ footer{
     background-color: var(--black);
     color: var(--white);
     padding-top: 5rem;
-    margin-top: 4rem;
 }
 
 .footer-body{
@@ -477,7 +615,17 @@ footer{
 }
 
 .left-info{
-    width: 46.68%;
+    width: 60%;
+}
+
+.phone-general{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.office{
+    width: 50%;
 }
 
 .left-info h3{
@@ -492,32 +640,44 @@ footer{
 }
 
 .right-info{
-    width: 24%;
+    display: flex;
+    justify-content: space-between;
+    width:35%;
     gap: 3%;
 }
 
 
 .navigation{
+    width: 60%;
+}
+
+
+.all-nav{
     display: flex;
     justify-content: space-between;
 }
 
-.all-links{
-    display: flex;
-    justify-content: space-between;
-}
-
-.right-info a{
+.all-nav .nav1{
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: var(--white1);
-    text-decoration: none;
 }
 
-.all-links .flink{
+.social-link{
+    width: 45%;
     display: flex;
     flex-direction: column;
 }
+
+
+.right-info a{
+    color: var(--white1);
+}
+
+.social-link .slink{
+    margin-top: 1rem;
+    color: var(--white);
+}
+
+
 
 .footer-text{
     display: flex;
@@ -527,7 +687,8 @@ footer{
     padding-bottom: 2.5rem;
 }
 
-.footer-text p{
+
+footer .logo-name{
     color: var(--white);
 }
 
@@ -536,5 +697,314 @@ footer .back-arrow svg {
     margin-left: 0.5rem;
 }
 
+.right-info a{
+    transition: color 0.3s ease;
+}
+footer .right-info a:hover{
+    color: var(--hover-bg-color);
+}
+
+
+.footer-text .back-arrow a{
+    color: var(--white);
+}
+
+.footer-text .back-arrow a:hover{
+   color: var(--hover-bg-color);
+}
 
 /* end of footer part */
+
+
+
+
+
+    /* start css for Medium devices (tablets) */
+    @media only screen and (min-width: 767.99px) and (max-width: 991.98px){
+
+
+
+        .side-gap{
+            width: 90%;
+        }
+
+       /* header start */
+       header nav {
+        gap: 1rem;
+        }
+
+        .hero-text h1 {
+            font-size:var(--medium2);
+        }
+        /* header end */
+
+
+
+
+        /* start of  blog part*/
+
+        .right-blog {
+            display:none;
+        }
+
+        .blog1 {
+            width: 100%;
+        }
+
+
+        .blog1 h4 {
+            font-size: var(--small);
+            margin-bottom: 0rem;
+            margin-top: 0rem;
+        }
+
+        /* end of  blog part*/
+
+        /* start of article */
+        .article-body .list-text p {
+            width: 70%;
+        }
+
+
+        .article{
+            width: 49%;
+        }
+
+
+        .article9{
+            display: none;
+        }
+
+
+        /* end of article */
+      
+
+
+        /* start of communication part */
+
+        .contact-text .text {
+            width: 100%;
+        }
+        /* end of communication part */
+
+
+        /* footer part start */
+        .address{
+            flex-direction: column;
+        }
+
+        .address .office{
+            width: 100%;
+        }
+
+
+        .social-link {
+            display: block;
+        }
+        /* footer part end */
+
+
+
+
+    }
+    /* start css for Medium devices (tablets) */
+
+
+
+    /*  start css for mobail */
+    @media only screen and (min-width: 0px) and (max-width: 575.98px){
+
+
+        .side-gap{
+        width: 92%;
+        margin: 0 auto;
+        }   
+    
+    
+        /* start of header */
+    
+        header nav{
+            display: none;
+        }
+        header button{
+            display: none;
+        }
+    
+        header .three-dot{
+            display: block;
+        }
+        /* end of header */
+
+
+        /* start of second  header */
+
+        .sh-text {
+            flex-direction: column;
+        }
+
+        .sh-text h1 {
+            width: 100%;
+        }
+
+
+        .sh-text p {
+            width: 100%;
+        }
+        /* end of second  header */
+
+        /* start blog part  */
+
+
+        .blog1 {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .blog1 .img-link {
+            width: 100%;
+        }
+
+
+        .blog1 .blog-texts {
+            padding-top: 1rem;
+            width: 100%;
+        }
+
+        .right-blog {
+            display: none;
+
+        }
+        /* end blog part  */
+
+        /* start of article */
+
+
+        .list-text h2 {
+            font-size: var(--small);
+        }
+
+        .article-body .list-text p {
+            width: 100%;
+        }
+
+
+        .article{
+            width: 100%;
+        }
+
+
+        .article5,.article6,.article7,.article8,.article9{
+            display: none;
+        }
+
+        /* end of article */
+
+
+        /* start of communication part */
+        .contact-text {
+            left: 0rem;
+            width:100%;
+        }
+
+        .contact-text .text {
+            width: 92%;
+        }
+
+        .email-button {
+            width: 100%;
+            height: 2.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .email-button .pc-button{
+            display: none;
+        }
+
+        .phone-button{
+            margin-top: 1rem;
+            display: block;
+            width: 100%;
+        }
+        .phone-button button{
+            display: block;
+            width: 100%;
+            background-color: rgb(199, 50, 79);
+        }
+        /* end of communication part */
+
+
+        /* start of footer */
+
+        .address{
+            flex-direction: column;
+        }
+            
+        .phone-general{
+            width: 100%;
+            justify-content: start;
+            gap: 8%;
+        }
+
+
+        .office{
+            width: 100%;
+        }
+
+        .information {
+            flex-direction: column;
+        }
+
+
+        .left-info {
+            width: 100%;
+        }
+
+        .left-info h3 {
+            width: 100%;
+        }
+
+
+        .right-info{
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .navigation{
+            width: 100%;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .all-nav{
+            justify-content: start;
+            gap: 8%;
+        }
+
+        .social-link {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 5%;
+            flex-wrap:wrap;
+        }
+
+        .slink{
+            display: inline-block;
+            color: var(--white);
+        }
+
+
+
+        .footer-text {
+            flex-direction: column;
+        }
+
+        .copyright{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        /* end of footer */
+
+    }    
+    /*  end css for mobail */
